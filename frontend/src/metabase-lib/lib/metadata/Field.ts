@@ -44,6 +44,8 @@ import Base from "./Base";
 class FieldInner extends Base {
   name: string;
   semantic_type: string | null;
+  fingerprint: any;
+  base_type: string | null;
   table?: Table;
 
   parent() {
