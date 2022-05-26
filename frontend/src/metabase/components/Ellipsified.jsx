@@ -47,6 +47,7 @@ export default class Ellipsified extends Component {
       tooltip,
       alwaysShowTooltip,
       tooltipMaxWidth,
+      "data-testid": dataTestId,
     } = this.props;
     const { isTruncated } = this.state;
     return (
@@ -65,6 +66,7 @@ export default class Ellipsified extends Component {
             whiteSpace: "nowrap",
             textOverflow: "ellipsis",
           }}
+          data-testid={dataTestId}
         >
           {children}
         </div>
